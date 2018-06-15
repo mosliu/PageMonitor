@@ -8,6 +8,7 @@ const debug = require('debug')('config');
 const dirConf = require('./dirs.conf');
 const logsConf = require('./logs.conf');
 const cronConf = require('./cron.conf');
+const ftqqConf = require('./ftqq.conf');
 
 function existsConfigFile(filename) {
   return fs.existsSync(path.join(dirConf.config, filename));
@@ -34,6 +35,7 @@ let config = {
   dir: dirConf,
   log: logsConf,
   cron: cronConf,
+  ftqq: ftqqConf,
 };
 
 config = merge(config, process.env.NODE_ENV === 'development' ? dev : pro);

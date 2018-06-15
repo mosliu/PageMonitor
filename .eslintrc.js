@@ -46,6 +46,7 @@ module.exports = {
       "ignoreTrailingComments": true,
       "ignoreTemplateLiterals": true,
       "ignoreRegExpLiterals": true,
+      "ignoreStrings": true,
       "ignorePattern": "<.*"
     }],
     'no-console':0,
